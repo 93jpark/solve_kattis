@@ -1,4 +1,3 @@
-print('Skener')
 
 import numpy as np
 
@@ -17,20 +16,25 @@ for x in range(0,row):
 arr = np.array(list)
 print(arr)
 print()
-print(arr[:1,])
 
+#print(arr[:,0])
+
+for y in range(zc):
+    temp_str = ""
+    for x in range(zr):
+        for i in arr[:x]:
+            print(i)
+
+print(temp_str)
 
 """
-
 for x in range(0, row):
     temp_str = "";
     for r in range(0, zr):
         for y in range(0, col):
             for c in range(0, zc):
                 temp_str += arr[x, y]
-    result.append(temp_str)
-    print(temp_str)
+
 else:
     print(result)
-
 """
